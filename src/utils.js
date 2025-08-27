@@ -53,8 +53,8 @@ function getPageId() {
 
 // Returns whether the specified ID is the current page
 function isPageId(...ctrls) {
-  url_method = ctrls.includes(getPageId());
-  html_method = document.body.innerHTML.includes(ctrls[1]);
+  const url_method = ctrls.includes(getPageId());
+  const html_method = document.body.innerHTML.includes(ctrls[1]);
   return  url_method || html_method;
 }
 
